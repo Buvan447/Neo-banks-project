@@ -36,7 +36,7 @@ This system replicates a **digital-first banking ecosystem**, where multiple mod
 - Account summary
 
 ### 4. 💥 Transaction Processing System (Core Module)
-- Deposit / Withdraw
+- Deposits / Withdrawals
 - Fund Transfer
 - Transaction logging
 - RBI rule enforcement
