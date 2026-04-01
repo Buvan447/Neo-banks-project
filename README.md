@@ -1,62 +1,72 @@
-# Neo Bank – Mini Transaction Dashboard
+# 🔴 Neo Bank – Mini Transaction Dashboard
 
-This is a simple web app built using Flask and MySQL to view and filter bank transactions.
+A sleek, modern **Flask + MySQL web application** that simulates a digital banking dashboard with advanced transaction filtering.
 
----
-
-## What this does
-
-* Shows the latest N transactions
-* Lets you filter transactions between two dates
-* Lets you view transactions of a specific user
+Built with a **premium red glassmorphism UI** inspired by Apple-style design.
 
 ---
 
-## How it works
+## 🚀 Features
 
-* The backend is built using Flask
-* It connects to a MySQL database
-* Based on the option selected in the form, it runs different SQL queries
-* The results are sent to the HTML page and displayed in a table
+* 📊 View latest **N transactions**
+* 📅 Filter transactions by **date range**
+* 👤 Filter transactions by **user ID**
+* 🎨 Modern UI with:
 
----
-
-## Tech used
-
-* Flask
-* MySQL
-* HTML + CSS
+  * Glassmorphism effects
+  * Gradient animations
+  * Smooth hover interactions
+* 🔐 Secure SQL queries (parameterized)
 
 ---
 
-## Files
+## 🛠️ Tech Stack
 
-```
+* **Backend:** Flask
+* **Database:** MySQL
+* **Frontend:** HTML, CSS (custom styling)
+
+---
+
+## 📂 Project Structure
+
+```id="2gi0ar"
 neo-bank/
 │── app.py
 │── templates/
 │   └── index.html
+│── static/
+│   └── (optional assets)
 ```
 
 ---
 
-## Setup
+## ⚙️ Installation
 
-1. Install requirements:
+### 1. Clone the repository
 
+```bash id="gjxj0i"
+git clone https://github.com/your-username/neo-bank.git
+cd neo-bank
 ```
+
+### 2. Install dependencies
+
+```bash id="u5zyk7"
 pip install flask mysql-connector-python
 ```
 
-2. Create database:
+### 3. Setup MySQL Database
 
-```
-CREATE DATABASE databasename;
+Create a database:
+
+```sql id="b1bc40"
+CREATE DATABASE vaxtronbank;
 ```
 
-3. Create table:
+Create table:
 
-```
+```sql id="q9o2ne"
 CREATE TABLE transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
@@ -67,20 +77,68 @@ CREATE TABLE transactions (
 );
 ```
 
-4. Run:
+---
 
+## 🔑 Environment Variables (IMPORTANT)
+
+⚠️ Do NOT hardcode your database password
+
+Set it like this:
+
+**Windows**
+
+```bash id="r0ccnc"
+set DB_PASSWORD=yourpassword
 ```
+
+**Linux / Mac**
+
+```bash id="d4o922"
+export DB_PASSWORD=yourpassword
+```
+
+---
+
+## ▶️ Run the App
+
+```bash id="3wboib"
 python app.py
 ```
 
-Open:
+Then open:
 
-```
+```id="rh0mra"
 http://127.0.0.1:5000/
 ```
 
 ---
 
-## Note
+## 📸 Preview
 
-This is just a basic project for learning/demo purposes.
+* Clean dashboard UI
+* Interactive filters
+* Smooth animations
+
+---
+
+## 🧠 Future Improvements
+
+* 🔐 User authentication system
+* 📈 Transaction analytics (charts)
+* 🌐 Deploy on cloud (AWS / Render)
+* 👥 Multi-user support
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for **educational purposes only** and does NOT represent a real banking system.
+
+---
+
+## 👨‍💻 Author
+
+Built by **Buvan** 🚀
+Aspiring developer focused on building real-world projects.
+
+---
